@@ -4,11 +4,11 @@
     "workers": 4,
     "upstreams": [
       {
-        "id": "node1",
+        "id": "node01",
         "url": "http://localhost:8001"
       },
       {
-        "id": "node2",
+        "id": "node02",
         "url": "http://localhost:8002"
       }
     ],
