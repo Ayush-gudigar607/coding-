@@ -1,0 +1,51 @@
+{
+  "server": {
+    "listen": 8080,
+    "workers": 4,
+    "upstreams": [
+      {
+        "id": "node01",
+        "url": "http://localhost:8001"
+      },
+      {
+        "id": "node02",
+        "url": "http://localhost:8002"
+      }
+    ],
+    "headers": [
+      {
+        "key": "x-forward-for",
+        "value": "$ip"
+      },
+      {
+        "key": "Authorization",
+        "value": "Bearer xyz"
+      }
+    ],
+    "rules": [
+      {
+        "path": "/",
+        "upstreams": [
+          "node1",
+          "node2"
+        ]
+      },
+      {
+        "path": "/admin",
+        "upstreams": [
+          "node2"
+        ]
+      }
+    ]
+  }
+}
+
+typescript installation
+
+dev,build
+
+pnpm i yaml
+
+ pnpm i zod
+
+ pnpm i commander
