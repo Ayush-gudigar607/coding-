@@ -1,0 +1,16 @@
+{
+  "name": "typescipt",
+  "version": "1.0.0",
+  "description": "<!-- Install TypeScript as a development dependency: -->\r npm install typescript --save-dev",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+"start":"node dist/index.js",
+"dev":"npx tsc src/index.ts"
+},
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

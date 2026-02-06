@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: thread-db
+    image: postgres:18 # Pin to version 18+ to use new structure
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql # Updated mount point
+
+volumes:
+  postgres_data:

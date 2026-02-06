@@ -1,0 +1,1 @@
+let employee:[number,string,boolean?]=[102,"Rohan",false];

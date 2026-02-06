@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.9"
+  }
+}

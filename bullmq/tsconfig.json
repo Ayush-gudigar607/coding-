@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    // Module resolution and environment
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    
+    // Output directory
+    "outDir": "./dist",
+    "rootDir": "./src",
+    
+    // Type checking
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // Source maps and declarations
+    "sourceMap": true,
+    "declaration": true,
+    
+    // Node.js types
+    "types": ["node"],
+    
+    // Module detection
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
